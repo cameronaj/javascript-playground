@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Just like any javascript functon or class, we must include it -->
+    <!-- Since we need jQuery and Namespaces within our class, we need to include them first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Namespaces.js"></script>
+    <script src="TestClass.js"></script>
+  </head>
+  <body>
+    <h2>Type Search</h2>
+    <div>
+      <div>
+      <input id="q"/>
+      <ul class="unstyled" id="result-list">
+          
+      </ul>
+      </div>
+    </div>
+  </body>
+  <!-- Now that the page is loaded, create an instance of the TestClass, passing through some settings -->
+  <script>
+        new com.example.pages.TestClass(
+            {
+                resultSelector: '#result-list'
+            });
+    </script>
+</html>
